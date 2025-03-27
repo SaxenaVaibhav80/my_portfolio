@@ -1,11 +1,14 @@
 const express = require("express")
 const app= express()
 const ejs= require("ejs")
+const dotenv = require("dotenv")
+dotenv.config()
 app.use(express.static("public"));
 const axios = require("axios");
 app.set("view engine", "ejs");
 
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN= process.env.KEY
+
 app.get("/", async (req, res) => {
     const query = `
     {
@@ -37,11 +40,15 @@ app.get("/", async (req, res) => {
                 timeout: 10000 
             }
         );
-        res.render("mainpage", { data: JSON.stringify(response.data, null, 2) });
+        res.render("mainpage", { 
+          githubData: response.data, 
+          error: null
+      });
 
     } catch (error) {
         console.error("Error Fetching GitHub Data:", error.message);
-        res.render("mainpage", { data: "Error fetching GitHub data!" });
+        res.render("mainpage", { githubData: null,
+          error: "Failed to fetch GitHub data: " + error.message });
     }
 });
 
