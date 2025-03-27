@@ -1,11 +1,14 @@
 const express = require("express")
 const app= express()
 const ejs= require("ejs")
+const dotenv = require("dotenv")
+dotenv.config()
 app.use(express.static("public"));
 const axios = require("axios");
 app.set("view engine", "ejs");
 
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN= process.env.KEY
+
 app.get("/", async (req, res) => {
     const query = `
     {
