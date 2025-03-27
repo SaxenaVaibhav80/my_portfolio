@@ -7,7 +7,7 @@ app.use(express.static("public"));
 const axios = require("axios");
 app.set("view engine", "ejs");
 
-const GITHUB_TOKEN= process.env.G_KEY
+const GITHUB_TOKEN= process.env.KEY
 
 app.get("/", async (req, res) => {
     const query = `
