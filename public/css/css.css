@@ -415,6 +415,7 @@ color: white;
     opacity: 0.5;
 }
 .sendicon,.sendicon2{
+.sendicon,.sendicon2{
     width: 20px;
     height: 20px;
     margin-left: 20px;
@@ -422,6 +423,16 @@ color: white;
 .mailbtn{
     border: 1px solid white;
     /* padding: 10px 15px 10px 15px; */
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.mailbtn2{
+    border: 1px solid  rgba(195, 195, 78, 0.915);;
+    padding: 10px 15px 10px 15px;
     border-radius: 10px;
     width: 250px;
     display: flex;
@@ -454,9 +465,17 @@ color: white;
     margin-top: 20px;
 }
 .mailtomelink:visited,.mailtomelink2:visited{
+.mailtomelink2{
+    width: 250px;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.mailtomelink:visited,.mailtomelink2:visited{
     color: white;
     text-decoration: none;
 }
+.mailtomelink:active,.mailtomelink2:active{
 .mailtomelink:active,.mailtomelink2:active{
     color: white;
     text-decoration: none;
