@@ -157,7 +157,7 @@
         <div class="contributions-chart">
     
             <div class="contributions-grid">
-                <% const weeks = JSON.parse(data).data.user.contributionsCollection.contributionCalendar.weeks; %>
+                <% const weeks = githubData?.data?.user?.contributionsCollection?.contributionCalendar?.weeks || [] %>       
                 <% for (let i = 0; i < weeks.length; i++) { %>
                     <div class="contributions-column">
                         <% const days = weeks[i].contributionDays; %>
@@ -190,8 +190,64 @@
             <span class="more">More</span>
         </div>
       </div>
-
     </section>
+
+    <section class="testimonials">
+        <h3 class="test-head">Our Testimonials</h3>
+        <div class="testimonials-main-div">
+          <div class="before-line">
+            <div>
+              Don’t just take our word for it—hear from those who have experienced it firsthand! The feedback and stories shared by our users truly reflect the value and impact we strive to create. Their words inspire us to keep improving and delivering the best experience possible.
+              <br><br>
+              If you’ve had an experience with us and would like to share your thoughts, we’d love to hear from you! Your feedback matters, and we’d be happy to feature your testimonial in our portfolio. Feel free to email me at <span class="mail">vaibhavsaxena599@gmail.com</span> or message me on linkedin , and I’ll personally add your story to our collection.
+              <br><br>
+              Let’s build something great together! 🚀
+
+              <a href="#" target="_blank" class="mailtomelink2">
+                <div class="mailbtn2">
+                   <p style="margin: 0;">Let's get in touch</p>
+                   <img class="sendicon2" src="img/mailit.png">
+                </div>
+              </a>
+
+            </div>
+            
+           <hr class="testimonials-line">
+          </div>
+
+          
+
+          <div class="after-line" id="slider">
+            <div id="slide1" class="first slide active">
+              <div ><img src="/img/shivang2.png" id="shivang"></div>
+              <div class="details-div">
+                <p class="details">
+                  I really like Vaibhav's work! Some of his projects are truly unique and creative. He puts in a lot of effort and dedication, making sure every detail is well-executed. His passion for innovation reflects in everything he builds."
+                </p>
+                <div class="profile">
+                  <p class="testname">Shivang maurya</p>
+                  <p class="designation">Associate Software Engineer at MAQ</p>
+                </div>
+              </div>
+            </div>
+            <div id="slide2" class="remaining slide">
+              <div ><img src="/img/yatharth.png" id="yatharth"></div>
+              <div class="details-div">
+                <p class="details">
+                  "Vaibhav’s work truly stands out! His projects showcase a unique blend of creativity and innovation. The amount of effort he puts into every detail is remarkable, and his dedication to delivering high-quality results is evident in everything he builds."
+                </p>
+                <div class="profile">
+                  <p class="testname">yatharth singh</p>
+                  <p class="designation">Software Engineer at Commvault</p>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+        </div>
+    </section>
+
+
     <footer class="footer1">
       <div class="foot-head">
         <p class="footer-head1">
