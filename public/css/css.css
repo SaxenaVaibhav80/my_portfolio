@@ -425,9 +425,17 @@ color: white;
 .footer1{
     margin-top: 6%;
 }
+
 .foot-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-head{
     text-align: center;
 }
+
 .span-your{
     color: rgba(195, 195, 78, 0.915);
 }
@@ -437,6 +445,11 @@ color: white;
     color: white;
     margin-top: 2.5%;
     opacity: 0.5;
+}
+
+.reachout-div{
+    text-align: center;
+    padding: 0 50px 0 50px;
 }
 .sendicon,.sendicon2{
     width: 20px;
@@ -468,7 +481,7 @@ color: white;
     width: 250px;
     display: block;
     text-decoration: none;
-    margin-left: 42%;
+    /* margin-left: 42%; */
     margin-top: 20px;
 }
 .mailtomelink2{
@@ -496,12 +509,13 @@ color: white;
 }
 .contact{
     display: flex;
+    justify-content: space-between;
 }
 .contact-subdiv1{
     margin-left: 7%;
 }
 .contact-subdiv2{
-    margin-left: 55%;
+    /* margin-left: 55%; */
     width: 200px;
     gap: 20px;
 }
