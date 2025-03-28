@@ -15,7 +15,7 @@ body{
     align-items: center;
     margin-left: 170px;
   
-
+    flex-wrap: wrap;
 }
 .intro{
     margin-top: 180px;
@@ -43,21 +43,34 @@ body{
 .des{
     font-size: 20px;
 }
-.contactbtn{
+.contactbtn,.resumebtn{
      width: 125px;
     text-align: center;
     border-radius: 5px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding: 5px 0px 5px 0px;
     font-size: 20px;
     border: 3px solid rgba(195, 195, 78, 0.915);
     color: rgba(195, 195, 78, 0.915);
+
     
+}
+.btns{
+    display: flex;
+    gap: 20px;
 }
 .contactbtn-link{
     width: 125px;
     display: block;
     text-decoration: none;
+    margin-top: 30px;
+}
+
+.resume-link{
+    width: 125px;
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
 }
 
 .contactbtn-link:visited{
@@ -82,6 +95,17 @@ body{
     text-decoration: none;
     margin-left: 40px;
 }
+
+.nav-item:active{
+    color: #aca3a3;
+    text-decoration: none;
+}
+
+.nav-item:visited{
+    color: #aca3a3;
+    text-decoration: none;
+}
+
 
 .decoration{
     height: 100px;
@@ -399,7 +423,7 @@ color: white;
 }
 
 .footer1{
-    margin-top: 8%;
+    margin-top: 6%;
 }
 .foot-head{
     text-align: center;
@@ -542,7 +566,7 @@ color: white;
 }
 
 .testimonials-line {
-   transform: rotate(20deg);
+   /* transform: rotate(20deg); */
    margin-left: 30px;
 }
 
@@ -551,6 +575,9 @@ color: white;
     /* border: 1px solid green; */
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 65px;
+    /* height: 345px; */
+    align-content: center;
 }
 .before-line {
     opacity: 0.7;
@@ -563,9 +590,10 @@ color: white;
 }
 .test-head{
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     color: #d6d4d4;
     margin-left:45% ;
+    
 }
 .testimonials{
     margin-top: 7%;
@@ -591,7 +619,7 @@ color: white;
     margin-left: 65%;
 }
 .designation{
-    color: #aaaaaa;
+    color: #ececec;
     margin: 0;
     font-weight: 700;
     margin-left: 48%;
@@ -606,3 +634,7 @@ color: white;
 .details-div{
     margin-left: 4%;
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+

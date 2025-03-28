@@ -52,4 +52,11 @@ app.get("/", async (req, res) => {
     }
 });
 
+
+app.get("/GoalRushApp",(req,res)=>
+{
+  res.render("goalrush")
+})
+
+
 app.listen(3000)
