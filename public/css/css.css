@@ -2,6 +2,9 @@ body{
     background-color: rgb(52,53,58);
     font-family:acumin-pro,"Acumin Pro","Helvetica Neue",Helvetica, Arial ,sans-serif
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .mypic{
     filter: grayscale(1);
@@ -194,7 +197,7 @@ color: white;
     height: 300px;
     margin-left: 36px;
 }
-.aboutus{
+#aboutus{
     padding-top: 6%;
 }
 .mypic2{
@@ -503,7 +506,7 @@ color: white;
     width: 500px;
 }
 
-.footer2{
+#footer2{
  margin-top: 10%;
  margin-bottom: 5%;
 }

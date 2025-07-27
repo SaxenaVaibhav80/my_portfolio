@@ -1,0 +1,250 @@
+.port-title{
+    display: inline-block;
+    margin: 0;
+    color: white;
+    margin-left: 2%;
+}
+
+.navbar{
+    width: 90%;
+    border: 3px solid #2F353D;
+    margin-left: 4%;
+    margin-top: 2%;
+    color: white;
+    border-radius: 10px;
+    background-color: #010409;
+    padding: 15px 10px 15px 10px;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.nav-item:active{
+ color: white;
+    text-decoration: none;
+}
+
+.nav-item:visited{
+   color: white;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #0D1117;
+    font-family:acumin-pro,"Acumin Pro","Helvetica Neue",Helvetica, Arial ,sans-serif
+}
+
+.left-div{
+    border: .1rem solid #2F353D;
+    width: 945px;
+    border-radius: 10px;
+    /* height: 1000px; */
+    padding:40px 40px 10px 35px
+}
+.right-div{
+
+    border: .1rem solid  #2F353D;
+   
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+
+}
+
+.outer-div{
+    margin-top: 5%;
+ /* border: 0.1rem solid green; */
+ display: flex;
+ flex-wrap: wrap;
+ gap: 30px;
+margin-bottom: 200px;
+}
+
+.title,.overview,.feature,.techstack,.how-work,.installation,.demo{
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    border-bottom: 1px solid #2F353D;
+    width: 94%;
+}
+.project-intro{
+    color: white;
+    padding-left: 20px;
+}
+
+li{
+    color: white;
+    line-height: 30px;
+}
+.heading{
+    font-weight: 700;
+}
+.installation-process{
+    font-weight: 700;
+    padding-left: 20px;
+    color: white;
+}
+
+.gitlink,.web-link{
+    color: rgb(103 148 188);;
+    text-decoration: none;
+}
+
+.gitlink:active,.web-link:active{
+    color: rgb(103 148 188);;
+    text-decoration: none;
+}
+
+.gitlink:visited,.web-link:visited{
+    color: rgb(103 148 188);;
+    text-decoration: none;
+}
+
+
+img{
+    width: inherit;
+}
+
+.about-todo{
+    color: white;
+    margin-top: 30px;
+}
+.about{
+    color: white;
+}
+
+.thanks{
+    color: white;
+    font-size: 1rem;
+}
+
+
+
+.footer-head1,.footer-head2{
+    color: white;
+    margin: 0;
+    font-size: 265%;
+    padding: 0 40px 0 40px;
+    font-weight: 700;
+}
+
+.footer1{
+    margin-top: 6%;
+}
+.foot-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.span-your{
+    color: rgba(195, 195, 78, 0.915);
+}
+
+.reachout-div{
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+.reachout{
+    font-size: 16px;
+    color: white;
+    margin-top: 2.5%;
+
+    opacity: 0.5;
+}
+.sendicon,.sendicon2{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.mailbtn{
+    border: 1px solid white;
+    /* padding: 10px 15px 10px 15px; */
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.mailbtn2{
+    border: 1px solid  rgba(195, 195, 78, 0.915);;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mailtomelink{
+    width: 250px;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.mailtomelink2{
+    width: 250px;
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.mailtomelink:visited,.mailtomelink2:visited{
+    color: white;
+    text-decoration: none;
+}
+.mailtomelink:active,.mailtomelink2:active{
+    color: white;
+    text-decoration: none;
+}
+.contact-subdiv2{
+    display: flex;
+    width: 500px;
+}
+
+.footer2{
+ margin-top: 10%;
+ margin-bottom: 5%;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-subdiv1{
+    margin-left: 7%;
+}
+.contact-subdiv2{
+    /* margin-left: 55%; */
+    width: 200px;
+    color: white;
+}
+.footer-name{
+    color: rgba(195, 195, 78, 0.915);
+}
+.para1{
+    margin: 0;
+    color: white;
+    opacity: 0.7;
+}
+.para2{
+    margin-top: 10px;
+    color: white;
+    opacity: 0.7;
+}
+.all-head{
+    text-align: center;
+}
+
+@media (max-width: 1276px) {  
+    .right-div {
+        width: 100%;
+    }
+    .left-div{
+        width: 100%;
+    }
+}

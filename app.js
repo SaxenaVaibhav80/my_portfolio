@@ -59,4 +59,20 @@ app.get("/GoalRushApp",(req,res)=>
 })
 
 
+app.get("/url-shortner",(req,res)=>
+{
+  res.render("url-shortner")
+})
+
+app.get("/khatabook-app",(req,res)=>
+{
+  res.render("khatabookapp")
+})
+
+app.get("/simon-game",(req,res)=>
+{
+  res.render("simongame")
+})
+
+
 app.listen(3000)
